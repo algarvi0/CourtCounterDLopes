@@ -1,5 +1,10 @@
 <resources>
     <string name="app_name">CourtCounterDLopes</string>
-    <!-- Strings DAVID LOPES -->
-
+    <string name="team_a">Team A</string>
+    <string name="_2_points">+2 Points</string>
+    <string name="team_b">Team B</string>
+    <string name="free_throw">Free throw</string>
+    <string name="reset">Reset</string>
+    <string name="zero">0</string>
+    <string name="_3_points">+3 Points</string>
 </resources>
