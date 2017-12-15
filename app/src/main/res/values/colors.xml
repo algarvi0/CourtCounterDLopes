@@ -220,7 +220,7 @@
     <!-- Amber -->
     <color name="material_amber_50">#fff8e1</color>
     <color name="material_amber_100">#b5ffecb3</color>
-    <color name="material_amber_200">#FFE082</color>
+    <color name="material_amber_200">#61ffe082</color>
     <color name="material_amber_300">#ffd54f</color>
     <color name="material_amber_400">#FFCA28</color>
     <color name="material_amber_500">#ffc107</color>
