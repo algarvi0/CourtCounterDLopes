@@ -24,25 +24,23 @@ public class MainActivity extends AppCompatActivity {
         scoreTeamA = scoreTeamA + TREE_POINTS;
         displayForTeamA(scoreTeamA);
     }
-
     // Sets 2 points for Team A
     public void set2Points_teamA(View view) {
         scoreTeamA = scoreTeamA + TWO_POINTS;
         displayForTeamA(scoreTeamA);
     }
-
     // Sets FreeThrow - 1 points for Team A
     public void setFreeThrow_teamA(View view) {
         scoreTeamA = scoreTeamA + ONE_POINT;
         displayForTeamA(scoreTeamA);
     }
-
     // Displays the given score for Team A.
     public void displayForTeamA(int score) {
         TextView scoreView;
         scoreView = findViewById(R.id.team_a_score);
         scoreView.setText(String.valueOf(score));
     }
+
 
     // TEAM B
     // Sets 3 points for Team B.
