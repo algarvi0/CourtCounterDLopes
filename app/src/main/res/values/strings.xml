@@ -1,19 +1,23 @@
 <resources>
     <string name="app_name">Court Counter</string>
-    <string name="team_a">Team A</string>
-    <string name="_2_points">+2 points</string>
-    <string name="team_b">Team B</string>
-    <string name="free_throw">+1 points</string>
-    <string name="reset">Reset All</string>
-    <string name="zero">0</string>
-    <string name="_3_points">+3 points</string>
-    <string name="scores">Scores</string>
-    <string name="fouls">Fouls</string>
-    <string name="background">Background Image - BasketBall Court</string>
+    <string name="background_image">Background Image - BasketBall Court</string>
     <string name="farense_logo">Farense Logo</string>
     <string name="ginasio_logo">Ginásio Logo</string>
+    <string name="team_a">Team A</string>
+    <string name="team_b">Team B</string>
+    <string name="scores">Scores</string>
+    <string name="_0">0</string>
+    <string name="free_throw">+1 point  </string>
+    <string name="_2_points">+2 points</string>
+    <string name="_3_points">+3 points</string>
+
+
+    <string name="faults">Faults</string>
     <string name="steals">Steals</string>
     <string name="send_report">Send report</string>
-    <string name="_0">0</string>
     <string name="rebounds">Rebounds</string>
+    <string name="reset">Start Game</string>
+    <string name="zero">0</string>
+
+
 </resources>
