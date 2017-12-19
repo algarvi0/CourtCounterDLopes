@@ -11,7 +11,7 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         tools:context=".MainActivity">
 
         <ImageView
@@ -369,7 +369,7 @@
             <Button
                 android:id="@+id/reset_all_button"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="0dp"
                 android:layout_marginEnd="@dimen/margin_padding_normal"
                 android:layout_marginLeft="@dimen/margin_padding_normal"
                 android:layout_marginRight="@dimen/margin_padding_normal"
