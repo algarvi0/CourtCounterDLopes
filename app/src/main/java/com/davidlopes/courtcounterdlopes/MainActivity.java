@@ -155,10 +155,7 @@ public class MainActivity extends AppCompatActivity {
         scoreView.setText(String.valueOf(score));
     }
 
-
-
     // TEAM B
-
     // Sets 3 points for Team B.
     public void set3Points_teamB(View view) {
         scoreTeamB = scoreTeamB + TREE_POINTS;
@@ -183,8 +180,8 @@ public class MainActivity extends AppCompatActivity {
         scoreView = (TextView) findViewById(R.id.team_b_score);
         scoreView.setText(String.valueOf(score));
     }
-    // Faults
 
+    // Faults
     // Sets Fault - 1
     public void setFaults_teamB(View view) {
         faultTeamB = faultTeamB + ONE_POINT;
@@ -245,9 +242,5 @@ public class MainActivity extends AppCompatActivity {
         displayReboundsTeamB(reboundsTeamB);
         stealsTeamB = 0;
         displayStealsTeamB(stealsTeamB);
-
-
     }
-
-
 }
