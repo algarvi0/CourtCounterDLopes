@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Estatisticas de Campo - Basket</string>
+    <string name="background_image">Imagem de fundo - Campo de Basket</string>
+    <string name="farense_logo">Logótipo do Farense</string>
+    <string name="ginasio_logo">Logótipo do Ginásio</string>
+    <string name="team_a">Equipa A</string>
+    <string name="team_b">Equipa B</string>
+    <string name="scores">Resultados</string>
+    <string name="free_throw">+1 ponto</string>
+    <string name="_2_points">+2 pontos</string>
+    <string name="_3_points">+3 pontos</string>
+    <string name="faults">Faltas</string>
+    <string name="steals">Rouboos de Bola</string>
+    <string name="send_report">Enviar relatória</string>
+    <string name="rebounds">Ressaltos</string>
+    <string name="reset">Iniciar Jogo</string>
+</resources>

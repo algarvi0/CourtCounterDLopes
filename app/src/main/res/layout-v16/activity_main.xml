@@ -8,12 +8,12 @@
     android:fillViewport="false"
     android:orientation="vertical">
 
-
-    <RelativeLayout
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         tools:context=".MainActivity">
-
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="wrap_content"
@@ -21,7 +21,6 @@
             android:contentDescription="@string/background_image"
             android:scaleType="centerCrop"
             app:srcCompat="@drawable/basketball_court_landscape" />
-
         <LinearLayout
             android:id="@+id/teams_scores"
             android:layout_width="match_parent"
@@ -34,7 +33,6 @@
             android:weightSum="2">
             <!--TEAM A-->
             <LinearLayout
-
                 android:id="@+id/teamAView"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -45,12 +43,10 @@
                     android:id="@+id/imageView2"
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
-                    android:layout_marginTop="16dp"
-
+                    android:layout_marginTop="@dimen/activity_horizontal_margin"
                     android:contentDescription="@string/ginasio_logo"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/ginasio" />
-
                 <TextView
                     android:id="@+id/team_a_score"
                     android:layout_width="match_parent"
@@ -62,7 +58,6 @@
                     android:textColor="@color/material_orange_500"
                     android:textSize="@dimen/material_typography_display3a"
                     tools:targetApi="jelly_bean" />
-
                 <Button
                     android:id="@+id/freeThrow_teamA_button"
                     android:layout_width="match_parent"
@@ -72,10 +67,7 @@
                     android:layout_marginRight="@dimen/margin_padding_small"
                     android:layout_marginStart="@dimen/margin_padding_xxnormal"
                     android:onClick="setFreeThrow_teamA"
-                    android:text="@string/free_throw"
-
-                    />
-
+                    android:text="@string/free_throw" />
                 <Button
                     android:id="@+id/twoPoints_teamA_button"
                     android:layout_width="match_parent"
@@ -86,7 +78,6 @@
                     android:layout_marginStart="@dimen/margin_padding_xxnormal"
                     android:onClick="set2Points_teamA"
                     android:text="@string/_2_points" />
-
                 <Button
                     android:id="@+id/threePoints_teamA_button"
                     android:layout_width="match_parent"
@@ -97,7 +88,6 @@
                     android:layout_marginStart="@dimen/margin_padding_xxnormal"
                     android:onClick="set3Points_teamA"
                     android:text="@string/_3_points" />
-
                 <!-- Team A - Stats Table -->
                 <TableLayout
                     android:layout_width="match_parent"
@@ -105,7 +95,7 @@
                     android:stretchColumns="2">
 
                     <TableRow
-                        android:layout_width="143dp"
+                        android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_marginEnd="@dimen/margin_padding_small"
                         android:layout_marginLeft="@dimen/margin_padding_small"
@@ -132,7 +122,6 @@
                             android:textSize="@dimen/text_size_large"
                             android:textStyle="bold" />
                     </TableRow>
-
                     <TableRow
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -141,14 +130,12 @@
                         android:layout_marginRight="@dimen/margin_padding_small"
                         android:layout_marginStart="@dimen/margin_padding_xxnormal"
                         android:background="@color/material_amber_100">
-
                         <Button
                             android:id="@+id/rebounds_teamA_button"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:onClick="setRebounds_teamA"
                             android:text="@string/rebounds" />
-
                         <TextView
                             android:id="@+id/reboundsTeamA_value"
                             android:layout_width="match_parent"
@@ -160,8 +147,6 @@
                             android:textSize="@dimen/text_size_large"
                             android:textStyle="bold" />
                     </TableRow>
-
-
                     <TableRow
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -170,14 +155,12 @@
                         android:layout_marginRight="@dimen/margin_padding_xxnormal"
                         android:layout_marginStart="@dimen/margin_padding_xxnormal"
                         android:background="@color/material_amber_100">
-
                         <Button
                             android:id="@+id/steal_teamA_button"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:onClick="setSteals_teamA"
                             android:text="@string/steals" />
-
                         <TextView
                             android:id="@+id/stealsTeamA_value"
                             android:layout_width="match_parent"
@@ -204,7 +187,6 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:orientation="vertical">
-
                 <ImageView
                     android:id="@+id/imageView3"
                     android:layout_width="match_parent"
@@ -213,7 +195,6 @@
                     android:contentDescription="@string/farense_logo"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/farense" />
-
                 <TextView
                     android:id="@+id/team_b_score"
                     android:layout_width="match_parent"
@@ -225,7 +206,6 @@
                     android:textColor="@color/material_orange_500"
                     android:textSize="@dimen/material_typography_display3a"
                     tools:targetApi="jelly_bean" />
-
                 <Button
                     android:id="@+id/freeThrow_teamB_button"
                     android:layout_width="match_parent"
@@ -236,7 +216,6 @@
                     android:layout_marginStart="@dimen/margin_padding_small"
                     android:onClick="setFreeThrow_teamB"
                     android:text="@string/free_throw" />
-
                 <Button
                     android:id="@+id/twoPoints_teamB_button"
                     android:layout_width="match_parent"
@@ -247,7 +226,6 @@
                     android:layout_marginStart="@dimen/margin_padding_small"
                     android:onClick="set2Points_teamB"
                     android:text="@string/_2_points" />
-
                 <Button
                     android:id="@+id/threePoints_teamB_button"
                     android:layout_width="match_parent"
@@ -258,13 +236,11 @@
                     android:layout_marginStart="@dimen/margin_padding_small"
                     android:onClick="set3Points_teamB"
                     android:text="@string/_3_points" />
-
                 <!-- Team B - Stats Table -->
                 <TableLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:stretchColumns="2">
-
                     <TableRow
                         android:layout_width="143dp"
                         android:layout_height="match_parent"
@@ -273,14 +249,12 @@
                         android:layout_marginRight="@dimen/margin_padding_small"
                         android:layout_marginStart="@dimen/margin_padding_small"
                         android:background="@color/material_amber_100">
-
                         <Button
                             android:id="@+id/foul_teamB_button"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:onClick="setFaults_teamB"
                             android:text="@string/faults" />
-
                         <TextView
                             android:id="@+id/faultsTeamB_value"
                             android:layout_width="match_parent"
@@ -293,7 +267,6 @@
                             android:textSize="@dimen/text_size_large"
                             android:textStyle="bold" />
                     </TableRow>
-
                     <TableRow
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -302,14 +275,12 @@
                         android:layout_marginRight="@dimen/margin_padding_small"
                         android:layout_marginStart="@dimen/margin_padding_small"
                         android:background="@color/material_amber_100">
-
                         <Button
                             android:id="@+id/rebounds_teamB_button"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:onClick="setRebounds_teamB"
                             android:text="@string/rebounds" />
-
                         <TextView
                             android:id="@+id/reboundsTeamB_value"
                             android:layout_width="match_parent"
@@ -321,8 +292,6 @@
                             android:textSize="@dimen/text_size_large"
                             android:textStyle="bold" />
                     </TableRow>
-
-
                     <TableRow
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -331,14 +300,12 @@
                         android:layout_marginRight="@dimen/margin_padding_small"
                         android:layout_marginStart="@dimen/margin_padding_small"
                         android:background="@color/material_amber_100">
-
                         <Button
                             android:id="@+id/steal_teamB_button"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:onClick="setSteals_teamB"
                             android:text="@string/steals" />
-
                         <TextView
                             android:id="@+id/stealsTeamB_value"
                             android:layout_width="match_parent"
@@ -365,7 +332,6 @@
             android:layout_centerVertical="false"
             android:background="@color/material_amber_200"
             android:orientation="vertical">
-
             <Button
                 android:id="@+id/reset_all_button"
                 android:layout_width="match_parent"
