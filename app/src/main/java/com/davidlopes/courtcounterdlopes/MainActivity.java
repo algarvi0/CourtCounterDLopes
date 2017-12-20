@@ -20,25 +20,44 @@ public class MainActivity extends AppCompatActivity {
     int ONE_POINT = 1;
     int TWO_POINTS = 2;
     int TREE_POINTS = 3;
-    // TEAM A
-    // Initialize Team A scores and Details variables.
+
+    // TEAM A - Initialize Team A scores and Details variables.
     int scoreTeamA = 0;
     int faultTeamA = 0;
     int reboundsTeamA = 0;
     int stealsTeamA = 0;
-    // TEAM B
-    // Initialize Team B scores and Details variables.
+    // TEAM B - Initialize Team B scores and Details variables.
     int scoreTeamB = 0;
     int faultTeamB = 0;
     int reboundsTeamB = 0;
     int stealsTeamB = 0;
-    //
-    TextView scoreView;
+    //Views
+    // Team A
+    TextView ScoreForTeamAView;
+    TextView displayFaultTeamAView;
+    TextView displayReboundsTeamAView;
+    TextView displayStealsTeamAView;
+    // Team B
+    TextView ScoreForTeamBView;
+    TextView displayFaultTeamBView;
+    TextView displayReboundsTeamBView;
+    TextView displayStealsTeamBView;
 
+    // Stores scores and details before rotation
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        // Team A
+        ScoreForTeamAView = (TextView) findViewById(R.id.team_a_score);
+        displayFaultTeamAView = (TextView) findViewById(R.id.faultsTeamA_value);
+        displayReboundsTeamAView = (TextView) findViewById(R.id.reboundsTeamA_value);
+        displayStealsTeamAView = (TextView) findViewById(R.id.stealsTeamA_value);
+        //Team B
+        ScoreForTeamBView = (TextView) findViewById(R.id.team_b_score);
+        displayFaultTeamBView = (TextView) findViewById(R.id.faultsTeamB_value);
+        displayReboundsTeamBView = (TextView) findViewById(R.id.reboundsTeamB_value);
+        displayStealsTeamBView = (TextView) findViewById(R.id.stealsTeamB_value);
     }
 
     @Override
@@ -56,6 +75,7 @@ public class MainActivity extends AppCompatActivity {
         // Always call the superclass so it can save the view hierarchy state
         super.onSaveInstanceState(savedInstanceState);
     }
+
     // Restore scores and details after rotation
     @Override
     protected void onRestoreInstanceState(Bundle savedInstanceState) {
@@ -98,8 +118,7 @@ public class MainActivity extends AppCompatActivity {
     }
     // Displays the given score for Team A.
     public void displayScoreForTeamA(int score) {
-        scoreView = (TextView) findViewById(R.id.team_a_score);
-        scoreView.setText(String.valueOf(score));
+        ScoreForTeamAView.setText(String.valueOf(score));
     }
     // Faults
     // Sets Fault - 1
@@ -109,8 +128,7 @@ public class MainActivity extends AppCompatActivity {
     }
     // Displays fault for Team A.
     public void displayFaultTeamA(int score) {
-        scoreView = (TextView) findViewById(R.id.faultsTeamA_value);
-        scoreView.setText(String.valueOf(score));
+        displayFaultTeamAView.setText(String.valueOf(score));
     }
     // Rebounds
     // Sets Rebounds +  1
@@ -120,8 +138,7 @@ public class MainActivity extends AppCompatActivity {
     }
     // Displays fault for Team A.
     public void displayReboundsTeamA(int score) {
-        scoreView = (TextView) findViewById(R.id.reboundsTeamA_value);
-        scoreView.setText(String.valueOf(score));
+        displayReboundsTeamAView.setText(String.valueOf(score));
     }
     // Sets Steals +  1
     public void setSteals_teamA(View view) {
@@ -130,9 +147,9 @@ public class MainActivity extends AppCompatActivity {
     }
     // Displays Steals for Team A.
     public void displayStealsTeamA(int score) {
-        scoreView = (TextView) findViewById(R.id.stealsTeamA_value);
-        scoreView.setText(String.valueOf(score));
+        displayStealsTeamAView.setText(String.valueOf(score));
     }
+
     // TEAM B
     // Sets 3 points for Team B.
     public void set3Points_teamB(View view) {
@@ -151,8 +168,7 @@ public class MainActivity extends AppCompatActivity {
     }
     // Displays the given score for Team B.
     public void displayScoreForTeamB(int score) {
-        scoreView = (TextView) findViewById(R.id.team_b_score);
-        scoreView.setText(String.valueOf(score));
+        ScoreForTeamBView.setText(String.valueOf(score));
     }
     // Faults
     // Sets Fault - 1
@@ -160,10 +176,10 @@ public class MainActivity extends AppCompatActivity {
         faultTeamB = faultTeamB + ONE_POINT;
         displayFaultTeamB(faultTeamB);
     }
-    // Displays fault for Team A.
+
+    // Displays fault for Team B.
     public void displayFaultTeamB(int score) {
-        scoreView = (TextView) findViewById(R.id.faultsTeamB_value);
-        scoreView.setText(String.valueOf(score));
+        displayFaultTeamBView.setText(String.valueOf(score));
     }
     // Rebounds
     // Sets Rebounds +  1
@@ -171,21 +187,22 @@ public class MainActivity extends AppCompatActivity {
         reboundsTeamB = reboundsTeamB + ONE_POINT;
         displayReboundsTeamB(reboundsTeamB);
     }
-    // Displays fault for Team A.
+
+    // Displays fault for Team B.
     public void displayReboundsTeamB(int score) {
-        scoreView = (TextView) findViewById(R.id.reboundsTeamB_value);
-        scoreView.setText(String.valueOf(score));
+        displayReboundsTeamBView.setText(String.valueOf(score));
     }
     // Sets Steals +  1
     public void setSteals_teamB(View view) {
         stealsTeamB = stealsTeamB + ONE_POINT;
         displayStealsTeamB(stealsTeamB);
     }
-    // Displays Steals for Team A.
+
+    // Displays Steals for Team B.
     public void displayStealsTeamB(int score) {
-        scoreView = (TextView) findViewById(R.id.stealsTeamB_value);
-        scoreView.setText(String.valueOf(score));
+        displayStealsTeamBView.setText(String.valueOf(score));
     }
+
     // Reset Teams Counter
     public void resetScores(View view) {
         // Team A reset
