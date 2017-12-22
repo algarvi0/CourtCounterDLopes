@@ -7,9 +7,9 @@
     <string name="team_a">Equipa A</string>
     <string name="team_b">Equipa B</string>
     <string name="scores">Resultados</string>
-    <string name="free_throw">+1 ponto</string>
-    <string name="_2_points">+2 pontos</string>
-    <string name="_3_points">+3 pontos</string>
+    <string name="free_throw">+1</string>
+    <string name="_2_points">+2</string>
+    <string name="_3_points">+3</string>
     <string name="faults">Faltas</string>
     <string name="steals">Roubo Bola</string>
     <string name="send_report">Enviar relatória</string>

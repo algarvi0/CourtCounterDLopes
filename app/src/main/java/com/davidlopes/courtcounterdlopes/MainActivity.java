@@ -102,17 +102,18 @@ public class MainActivity extends AppCompatActivity {
     }
     // TEAM A
     // Sets 3 points for Team A.
-    public void set3Points_teamA(View view) {
+    public void set3PointsTeamA(View view) {
+    
         scoreTeamA = scoreTeamA + TREE_POINTS;
         displayScoreForTeamA(scoreTeamA);
     }
     // Sets 2 points for Team A
-    public void set2Points_teamA(View view) {
+    public void set2PointsTeamA(View view) {
         scoreTeamA = scoreTeamA + TWO_POINTS;
         displayScoreForTeamA(scoreTeamA);
     }
     // Sets FreeThrow - 1 points for Team A
-    public void setFreeThrow_teamA(View view) {
+    public void setFreeThrowTeamA(View view) {
         scoreTeamA = scoreTeamA + ONE_POINT;
         displayScoreForTeamA(scoreTeamA);
     }
@@ -122,7 +123,7 @@ public class MainActivity extends AppCompatActivity {
     }
     // Faults
     // Sets Fault - 1
-    public void setFaults_teamA(View view) {
+    public void setFaultsTeamA(View view) {
         faultTeamA = faultTeamA + ONE_POINT;
         displayFaultTeamA(faultTeamA);
     }
@@ -132,7 +133,7 @@ public class MainActivity extends AppCompatActivity {
     }
     // Rebounds
     // Sets Rebounds +  1
-    public void setRebounds_teamA(View view) {
+    public void setReboundsTeamA(View view) {
         reboundsTeamA = reboundsTeamA + ONE_POINT;
         displayReboundsTeamA(reboundsTeamA);
     }
@@ -141,7 +142,7 @@ public class MainActivity extends AppCompatActivity {
         displayReboundsTeamAView.setText(String.valueOf(score));
     }
     // Sets Steals +  1
-    public void setSteals_teamA(View view) {
+    public void setStealsTeamA(View view) {
         stealsTeamA = stealsTeamA + ONE_POINT;
         displayStealsTeamA(stealsTeamA);
     }
@@ -157,7 +158,7 @@ public class MainActivity extends AppCompatActivity {
         displayScoreForTeamB(scoreTeamB);
     }
     // Sets 2 points for Team B
-    public void set2Points_teamB(View view) {
+    public void set2PointsTeamB(View view) {
         scoreTeamB = scoreTeamB + TWO_POINTS;
         displayScoreForTeamB(scoreTeamB);
     }
@@ -172,7 +173,7 @@ public class MainActivity extends AppCompatActivity {
     }
     // Faults
     // Sets Fault - 1
-    public void setFaults_teamB(View view) {
+    public void setFaultsTeamB(View view) {
         faultTeamB = faultTeamB + ONE_POINT;
         displayFaultTeamB(faultTeamB);
     }
@@ -183,7 +184,7 @@ public class MainActivity extends AppCompatActivity {
     }
     // Rebounds
     // Sets Rebounds +  1
-    public void setRebounds_teamB(View view) {
+    public void setReboundsTeamB(View view) {
         reboundsTeamB = reboundsTeamB + ONE_POINT;
         displayReboundsTeamB(reboundsTeamB);
     }
@@ -193,7 +194,7 @@ public class MainActivity extends AppCompatActivity {
         displayReboundsTeamBView.setText(String.valueOf(score));
     }
     // Sets Steals +  1
-    public void setSteals_teamB(View view) {
+    public void setStealsTeamB(View view) {
         stealsTeamB = stealsTeamB + ONE_POINT;
         displayStealsTeamB(stealsTeamB);
     }

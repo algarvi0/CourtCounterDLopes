@@ -1,25 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="fill_parent"
     android:background="@drawable/basketball_court_landscape"
-    android:fillViewport="false"
+    android:fillViewport="true"
     android:orientation="vertical">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         tools:context=".MainActivity">
-
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:contentDescription="@string/background_image"
-            android:scaleType="centerCrop" />
 
         <LinearLayout
             android:id="@+id/teams_scores"
@@ -63,6 +55,7 @@
                         android:textSize="@dimen/material_typography_display3a"
                         tools:targetApi="jelly_bean" />
                 </LinearLayout>
+
                 <LinearLayout
                     style="?android:attr/buttonBarStyle"
                     android:layout_width="match_parent"
@@ -71,7 +64,9 @@
                     android:layout_marginEnd="@dimen/margin_padding_small"
                     android:layout_marginStart="@dimen/margin_padding_small"
                     android:layout_marginTop="@dimen/margin_padding_small"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:textAlignment="gravity">
+
                     <Button
                         android:id="@+id/freeThrow_teamA_button"
                         android:layout_width="match_parent"
@@ -79,6 +74,7 @@
                         android:layout_weight="1"
                         android:onClick="setFreeThrow_teamA"
                         android:text="@string/free_throw" />
+
                     <Button
                         android:id="@+id/twoPoints_teamA_button"
                         android:layout_width="match_parent"
@@ -86,6 +82,7 @@
                         android:layout_weight="1"
                         android:onClick="set2Points_teamA"
                         android:text="@string/_2_points" />
+
                     <Button
                         android:id="@+id/threePoints_teamA_button"
                         android:layout_width="match_parent"
@@ -107,16 +104,16 @@
                         android:layout_weight="1"
                         android:background="@color/material_amber_100"
                         android:orientation="horizontal">
+
                         <Button
                             android:id="@+id/rebounds_teamA_button"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:layout_weight="1"
                             android:onClick="setRebounds_teamA"
                             android:text="@string/rebounds" />
                         <TextView
                             android:id="@+id/reboundsTeamA_value"
-                            android:layout_width="match_parent"
+                            android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:gravity="center"
@@ -346,7 +343,7 @@
             android:orientation="horizontal">
             <Button
                 android:id="@+id/reset_all_button"
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_marginEnd="@dimen/margin_padding_normal"
                 android:layout_marginLeft="@dimen/margin_padding_normal"
