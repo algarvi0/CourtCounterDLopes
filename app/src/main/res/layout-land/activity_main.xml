@@ -109,11 +109,13 @@
                             android:id="@+id/rebounds_teamA_button"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
+                            android:layout_weight="1"
                             android:onClick="setRebounds_teamA"
                             android:text="@string/rebounds" />
+
                         <TextView
                             android:id="@+id/reboundsTeamA_value"
-                            android:layout_width="0dp"
+                            android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:gravity="center"

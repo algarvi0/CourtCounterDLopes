@@ -153,7 +153,7 @@ public class MainActivity extends AppCompatActivity {
 
     // TEAM B
     // Sets 3 points for Team B.
-    public void set3Points_teamB(View view) {
+    public void set3PointsteamB(View view) {
         scoreTeamB = scoreTeamB + TREE_POINTS;
         displayScoreForTeamB(scoreTeamB);
     }
@@ -163,7 +163,7 @@ public class MainActivity extends AppCompatActivity {
         displayScoreForTeamB(scoreTeamB);
     }
     // Sets FreeThrow - 1 points for Team B
-    public void setFreeThrow_teamB(View view) {
+    public void setFreeThrowteamB(View view) {
         scoreTeamB = scoreTeamB + ONE_POINT;
         displayScoreForTeamB(scoreTeamB);
     }

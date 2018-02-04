@@ -221,7 +221,7 @@
                     android:layout_marginLeft="@dimen/margin_padding_xxnormal"
                     android:layout_marginRight="@dimen/margin_padding_small"
                     android:layout_marginStart="@dimen/margin_padding_small"
-                    android:onClick="setFreeThrowTeamB"
+                    android:onClick="setFreeThrowteamB"
                     android:text="@string/free_throw" />
 
                 <Button
@@ -243,7 +243,7 @@
                     android:layout_marginLeft="@dimen/margin_padding_xxnormal"
                     android:layout_marginRight="@dimen/margin_padding_small"
                     android:layout_marginStart="@dimen/margin_padding_small"
-                    android:onClick="set3PointsTeamB"
+                    android:onClick="set3PointsteamB"
                     android:text="@string/_3_points" />
                 <!-- Team B - Stats Table -->
                 <TableLayout
